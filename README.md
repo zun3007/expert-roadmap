@@ -25,7 +25,7 @@ A comprehensive roadmap website to help users become experts in software enginee
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/expert-roadmap.git
+git clone https://github.com/zun3007/expert-roadmap
 cd expert-roadmap
 ```
 
