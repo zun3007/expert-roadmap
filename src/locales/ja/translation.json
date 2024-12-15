@@ -1,0 +1,74 @@
+{
+  "home": {
+    "title": {
+      "become": "目指せ",
+      "expert": "ソフトウェアエキスパート"
+    },
+    "description": {
+      "line1": "基礎から応用まで包括的なロードマップ、",
+      "line2": "迅速かつ効果的な成長をサポートします。"
+    },
+    "cta": "ロードマップを見る"
+  },
+  "nav": {
+    "home": "ホーム",
+    "roadmap": "ロードマップ",
+    "theme": {
+      "light": "ライトモード",
+      "dark": "ダークモード"
+    },
+    "language": {
+      "select": "言語を選択",
+      "en": "English",
+      "vi": "Tiếng Việt",
+      "ja": "日本語"
+    }
+  },
+  "roadmap": {
+    "header": {
+      "title": "学習ロードマップ",
+      "description": {
+        "part1": "ソフトウェアの専門家になるための",
+        "part2": "ロードマップとリソースを探索"
+      }
+    },
+    "stages": {
+      "foundation": {
+        "title": "ステージ1：強固な基礎を築く",
+        "description": "基礎を習得し、しっかりとした土台を構築する"
+      },
+      "advanced": {
+        "title": "ステージ2：応用と専門知識",
+        "description": "特定分野のスキルを深く習得する"
+      },
+      "innovation": {
+        "title": "ステージ3：革新とトレンド",
+        "description": "新技術を探求し、習得する"
+      },
+      "mastery": {
+        "title": "ステージ4：達人への道",
+        "description": "エキスパートレベルに達し、知識を共有する"
+      }
+    },
+    "difficulty": {
+      "beginner": "初級",
+      "intermediate": "中級",
+      "advanced": "上級",
+      "expert": "エキスパート"
+    },
+    "progress": {
+      "completed": "完了",
+      "inProgress": "進行中",
+      "notStarted": "未開始"
+    },
+    "resources": {
+      "title": "学習リソース",
+      "types": {
+        "video": "ビデオコース",
+        "documentation": "ドキュメント",
+        "book": "書籍",
+        "link": "リソース"
+      }
+    }
+  }
+}

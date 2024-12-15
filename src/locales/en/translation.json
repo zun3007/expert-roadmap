@@ -1,0 +1,74 @@
+{
+  "home": {
+    "title": {
+      "become": "Become a",
+      "expert": "Software Expert"
+    },
+    "description": {
+      "line1": "Comprehensive roadmap from basics to advanced,",
+      "line2": "designed to help you develop quickly and effectively."
+    },
+    "cta": "Explore Roadmap"
+  },
+  "nav": {
+    "home": "Home",
+    "roadmap": "Roadmap",
+    "theme": {
+      "light": "Light Mode",
+      "dark": "Dark Mode"
+    },
+    "language": {
+      "select": "Select Language",
+      "en": "English",
+      "vi": "Tiếng Việt",
+      "ja": "日本語"
+    }
+  },
+  "roadmap": {
+    "header": {
+      "title": "Learning Roadmap",
+      "description": {
+        "part1": "Explore the roadmap and resources to become",
+        "part2": "a software expert"
+      }
+    },
+    "stages": {
+      "foundation": {
+        "title": "Stage 1: Building Strong Foundations",
+        "description": "Master the basics and build a solid foundation"
+      },
+      "advanced": {
+        "title": "Stage 2: Advanced and In-depth",
+        "description": "Develop specialized skills in specific areas"
+      },
+      "innovation": {
+        "title": "Stage 3: Innovation and Trends",
+        "description": "Explore and master new technologies"
+      },
+      "mastery": {
+        "title": "Stage 4: Becoming a \"Sage\"",
+        "description": "Reach expert level and share knowledge"
+      }
+    },
+    "difficulty": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "expert": "Expert"
+    },
+    "progress": {
+      "completed": "Completed",
+      "inProgress": "In Progress",
+      "notStarted": "Not Started"
+    },
+    "resources": {
+      "title": "Learning Resources",
+      "types": {
+        "video": "Video Course",
+        "documentation": "Documentation",
+        "book": "Book",
+        "link": "Resource"
+      }
+    }
+  }
+}

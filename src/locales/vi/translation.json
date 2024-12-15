@@ -1,0 +1,74 @@
+{
+  "home": {
+    "title": {
+      "become": "Trở Thành",
+      "expert": "Chuyên Gia Phần Mềm"
+    },
+    "description": {
+      "line1": "Lộ trình toàn diện từ cơ bản đến chuyên sâu,",
+      "line2": "được thiết kế để giúp bạn phát triển nhanh và hiệu quả."
+    },
+    "cta": "Khám Phá Lộ Trình"
+  },
+  "nav": {
+    "home": "Trang Chủ",
+    "roadmap": "Lộ Trình",
+    "theme": {
+      "light": "Chế Độ Sáng",
+      "dark": "Chế Độ Tối"
+    },
+    "language": {
+      "select": "Chọn Ngôn Ngữ",
+      "en": "English",
+      "vi": "Tiếng Việt",
+      "ja": "日本語"
+    }
+  },
+  "roadmap": {
+    "header": {
+      "title": "Lộ Trình Học Tập",
+      "description": {
+        "part1": "Khám phá lộ trình và tài nguyên để trở thành",
+        "part2": "chuyên gia phần mềm"
+      }
+    },
+    "stages": {
+      "foundation": {
+        "title": "Giai đoạn 1: Xây dựng nền tảng vững chắc",
+        "description": "Nắm vững kiến thức cơ bản và xây dựng nền tảng vững chắc"
+      },
+      "advanced": {
+        "title": "Giai đoạn 2: Nâng cao và chuyên sâu",
+        "description": "Phát triển kỹ năng chuyên sâu trong các lĩnh vực cụ thể"
+      },
+      "innovation": {
+        "title": "Giai đoạn 3: Đổi mới và chuyên sâu xu hướng",
+        "description": "Khám phá và làm chủ các công nghệ mới"
+      },
+      "mastery": {
+        "title": "Giai đoạn 4: Trở thành \"Thánh nhân\"",
+        "description": "Đạt đến trình độ chuyên gia và chia sẻ kiến thức"
+      }
+    },
+    "difficulty": {
+      "beginner": "Cơ Bản",
+      "intermediate": "Trung Bình",
+      "advanced": "Nâng Cao",
+      "expert": "Chuyên Gia"
+    },
+    "progress": {
+      "completed": "Đã Hoàn Thành",
+      "inProgress": "Đang Thực Hiện",
+      "notStarted": "Chưa Bắt Đầu"
+    },
+    "resources": {
+      "title": "Tài Liệu Học Tập",
+      "types": {
+        "video": "Khóa Học Video",
+        "documentation": "Tài Liệu",
+        "book": "Sách",
+        "link": "Tài Nguyên"
+      }
+    }
+  }
+}
