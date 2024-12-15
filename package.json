@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "extract-translations": "ts-node --esm scripts/extractTranslations.ts",
-    "predeploy": "npm run build",
+    "predeploy": "pnpm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
