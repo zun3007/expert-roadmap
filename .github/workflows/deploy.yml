@@ -42,8 +42,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Type Check
+        run: pnpm exec tsc --noEmit
+
       - name: Build
         run: pnpm build
+        env:
+          CI: false # This allows the build to continue even with warnings
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4

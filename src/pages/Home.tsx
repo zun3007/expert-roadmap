@@ -9,17 +9,8 @@ const Home = () => {
   const { t } = useTranslation();
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Check for mobile device
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-
     // Start loading video after component mounts
     const timer = setTimeout(() => {
       setShouldLoadVideo(true);
@@ -27,7 +18,6 @@ const Home = () => {
 
     return () => {
       clearTimeout(timer);
-      window.removeEventListener('resize', checkMobile);
     };
   }, []);
 
@@ -53,7 +43,7 @@ const Home = () => {
             isVideoLoaded ? 'opacity-0' : 'opacity-100'
           }`}
           style={{
-            backgroundImage: 'url(/images/coding-placeholder.jpg)',
+            backgroundImage: 'url(./assets/images/coding-placeholder.svg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -67,12 +57,16 @@ const Home = () => {
             muted
             playsInline
             preload='metadata'
+            poster='./assets/images/coding-placeholder.svg'
             onLoadedData={handleVideoLoad}
             className={`absolute inset-0 w-full h-full object-cover scale-105 transform transition-opacity duration-1000 ${
               isVideoLoaded ? 'opacity-100' : 'opacity-0'
             }`}
           >
-            <source src='/videos/coding-background.mp4' type='video/mp4' />
+            <source
+              src='./assets/videos/coding-background.mp4'
+              type='video/mp4'
+            />
           </video>
         )}
       </div>

@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { RoadmapItem } from '../types/roadmap';
-import { useTheme } from '../contexts/ThemeContext';
 import { FaTrophy, FaTasks, FaLayerGroup, FaChartLine } from 'react-icons/fa';
 
 interface ProgressStats {
@@ -43,8 +42,6 @@ const difficultyColors = {
 };
 
 const ProgressDashboard: React.FC<Props> = ({ items }) => {
-  const { theme } = useTheme();
-
   const calculateProgress = (items: RoadmapItem[]): ProgressStats => {
     const stats: ProgressStats = {
       total: 0,
