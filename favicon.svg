@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    
+    <!-- Screen glow -->
+    <filter id="screenGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    
+    <!-- Typing cursor animation -->
+    <rect id="cursor" width="2" height="6" fill="#4ade80">
+      <animate attributeName="opacity"
+               values="1;0;1"
+               dur="1s"
+               repeatCount="indefinite"/>
+    </rect>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="45" fill="url(#bgGradient)"/>
+  
+  <!-- Laptop base (3D effect) -->
+  <path d="M30,65 L70,65 L75,70 L25,70 Z" 
+        fill="#2a2a4a"
+        transform="skewX(-10)">
+    <animate attributeName="transform"
+             values="skewX(-10);skewX(-8);skewX(-10)"
+             dur="4s"
+             repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Laptop screen (3D effect) -->
+  <g transform="translate(50,50) rotate(-10)">
+    <rect x="-20" y="-15" width="40" height="30" 
+          fill="#1e293b" 
+          transform="skewX(10)"/>
+    
+    <!-- Code lines (animated) -->
+    <g transform="translate(-15,-10) scale(0.8)">
+      <!-- Line 1 -->
+      <rect width="20" height="2" fill="#4ade80" opacity="0.8">
+        <animate attributeName="width"
+                 values="0;20;20"
+                 dur="2s"
+                 begin="0s;line1.end+1s"
+                 id="line1"/>
+      </rect>
+      
+      <!-- Line 2 -->
+      <rect y="6" width="25" height="2" fill="#60a5fa" opacity="0.8">
+        <animate attributeName="width"
+                 values="0;25;25"
+                 dur="2s"
+                 begin="line1.end"
+                 id="line2"/>
+      </rect>
+      
+      <!-- Line 3 -->
+      <rect y="12" width="15" height="2" fill="#f43f5e" opacity="0.8">
+        <animate attributeName="width"
+                 values="0;15;15"
+                 dur="1.5s"
+                 begin="line2.end"
+                 id="line3"/>
+      </rect>
+      
+      <!-- Animated cursor -->
+      <use href="#cursor">
+        <animate attributeName="x"
+                 values="0;20;20;25;25;15"
+                 dur="5.5s"
+                 repeatCount="indefinite"/>
+        <animate attributeName="y"
+                 values="0;0;6;6;12;12"
+                 dur="5.5s"
+                 repeatCount="indefinite"/>
+      </use>
+    </g>
+  </g>
+  
+  <!-- Person silhouette -->
+  <g transform="translate(50,45)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="6" fill="#94a3b8">
+      <animate attributeName="transform"
+               values="translate(0,0);translate(0,-1);translate(0,0)"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Body -->
+    <path d="M-4,6 C-4,6 0,16 4,6" 
+          stroke="#94a3b8" 
+          stroke-width="3" 
+          fill="none">
+      <animate attributeName="d"
+               values="M-4,6 C-4,6 0,16 4,6;M-4,6 C-4,6 0,15 4,6;M-4,6 C-4,6 0,16 4,6"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Screen reflection -->
+  <rect x="30" y="35" width="40" height="30" 
+        fill="white" 
+        opacity="0.05"
+        transform="skewX(-10)"/>
+</svg> 
